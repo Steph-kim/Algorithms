@@ -25,6 +25,7 @@ Space Complexity: O(V + E)
 Firstly, we need to finish prerequisites courses before taking a main course so this is a directed graph problem. 
 In other words, this problem can be restated to Detect cycle in a directed graph 
 or similarly Check if a graph is acyclic. 
+
 """
 
 from collections import deque
@@ -95,4 +96,4 @@ class Solution:
         return topoOrder if count == numNodes else None
             
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        return True if self.topoBFS(numCourses, prerequisites) else False
+        return True if self.topoBFS(numCourses, prerequisites) else False 

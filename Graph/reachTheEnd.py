@@ -16,13 +16,13 @@ def is_valid(graph, r, c):
 
 def reachTheEnd(grid, k):
     rows, cols = len(grid), len(grid[0])
+    
     graph = [[1 for _ in range(cols)] for _ in range(rows)]
     buildGraph(rows, cols, grid, graph)
-
     graph[0][0] = 1
+
     queue = deque()
     queue.append((0,0))
-
     while len(queue):
         r, c = queue.popleft()
         d = graph[r][c]

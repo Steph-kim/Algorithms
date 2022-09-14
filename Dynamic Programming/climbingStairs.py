@@ -15,7 +15,7 @@ Explanation: There are three ways to climb to the top.
 """
 
 # Bottom up approach  
-# Time complexity: O()
+# Time complexity: O(n)
 def climbStairs(n):
     if n == 1: 
         return 1
@@ -37,7 +37,19 @@ def climbStairs(n):
 #   b represents (n-1)
 # Time complexity: O(n)
 def climbStairs2(n):
-    a, b = 1, 1
-    for i in range(n):
-        a, b = b, a + b
+    a = b = 1
+    for _ in range(n):
+        a, b = b, a+b
     return a
+
+
+# def climbStairs(n):
+#     """
+#     if (n==0):
+#         return 0
+#     if (n==1):
+#         return 1
+#     if (n<=2):
+#         return n
+#     return self.climbStairs(n-1) + self.climbStairs(n-2)
+#     """

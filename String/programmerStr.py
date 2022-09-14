@@ -38,5 +38,5 @@ print(programmerStrings(str4))
 str5 = "programprogramprogrammerxxxxprogrammer"
 print(programmerStrings(str5))
 
-
+str = ""
 
