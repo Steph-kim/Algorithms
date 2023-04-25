@@ -16,6 +16,7 @@ def countTeams(rating, queries):
                     else: 
                         seen[rating[i]] = i
         res.append(teams)
+    print(rating)
     return res
     
 rating=  [8, 8, 10, 1, 4, 5, 8, 10, 7, 6, 8, 3, 2, 5, 2, 3, 1, 8, 7, 7, 7, 3, 4, 2, 2, 3, 5, 10, 1, 10, 8, 7, 4, 5, 1, 4, 4, 5, 6, 2, 10, 7, 1, 7]
