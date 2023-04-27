@@ -16,13 +16,3 @@ def kth_greatest(arr, k):
     else:
         return mid[0]
 
-def getGreatestElements(arr, n, k):
-    ar = arr[:k]
-    greatest = kth_greatest(ar, k)
-    res = [greatest]
-    
-    for i in range(k, n):
-        ar.append(arr[i])
-        greatest = kth_greatest(ar, k)
-        res.append(greatest)
-    return res
