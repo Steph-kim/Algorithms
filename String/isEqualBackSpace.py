@@ -1,7 +1,5 @@
 # Time complexity: O(n^2)
 # res[:-1] operation is O(n) as it copies the array into a new array 
-from re import S
-
 
 def backspaceCompare(s1, s2):
     def backSpace(s):
